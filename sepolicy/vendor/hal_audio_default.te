@@ -13,3 +13,7 @@ set_prop(hal_audio_default, vendor_audio_prop)
 
 # Allow audio hal access to elliptic.ultrasound property
 get_prop(hal_audio_default, vendor_sensors_prop)
+
+# Dolby
+allow hal_audio_default hal_dms_hwservice:hwservice_manager find;
+binder_call(hal_audio_default, hal_dms_default)

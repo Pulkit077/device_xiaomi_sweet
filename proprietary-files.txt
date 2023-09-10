@@ -83,7 +83,6 @@ vendor/lib/soundfx/libhwdap.so
 vendor/lib/soundfx/libshoebox.so
 vendor/lib/soundfx/libswgamedap.so
 vendor/lib/soundfx/libswvqe.so
-vendor/lib/libdapparamstorage.so
 
 # Audio (FX modules) - from sweetin-user 12 SKQ1.210908.001 V13.0.10.0.SKFINXM release-keys
 vendor/lib/soundfx/libdirac.so|da2c2c47da3e729dc94038cd2953e620499b1fad
@@ -891,6 +890,21 @@ vendor/etc/seccomp_policy/codec2.vendor.base.policy
 vendor/etc/seccomp_policy/codec2.vendor.ext.policy
 vendor/lib/libqcodec2.so
 vendor/lib64/libqcodec2.so
+
+# Media (Dolby)
+vendor/bin/hw/vendor.dolby.hardware.dms@2.0-service
+vendor/etc/dolby/dax-default.xml
+vendor/etc/init/vendor.dolby.hardware.dms@2.0-service.rc
+vendor/etc/vintf/manifest/manifest_vendor.dolby.hardware.dms.xml
+vendor/lib/libdapparamstorage.so
+vendor/lib/libdeccfg.so
+vendor/lib/libstagefright_soft_ac4dec.so
+vendor/lib/libstagefright_soft_ddpdec.so
+vendor/lib/vendor.dolby.hardware.dms@2.0.so
+vendor/lib64/libdapparamstorage.so
+vendor/lib64/libdlbdsservice.so
+vendor/lib64/vendor.dolby.hardware.dms@2.0-impl.so
+vendor/lib64/vendor.dolby.hardware.dms@2.0.so
 
 # Media (OMX)
 vendor/lib/libAlacSwDec.so
