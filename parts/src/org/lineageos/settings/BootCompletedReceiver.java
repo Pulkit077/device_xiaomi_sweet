@@ -49,7 +49,7 @@ public class BootCompletedReceiver extends BroadcastReceiver {
         if (DEBUG) Log.d(TAG, "Received boot completed intent");
         try {
 //            DiracUtils.getInstance(context);
-        DolbyUtils.getInstance(context).onBootCompleted();
+            DolbyUtils.getInstance(context);
         } catch (Exception e) {
             Log.d(TAG, "Dolby is not present in system");
         }
